@@ -432,7 +432,7 @@ function renderLinks(){
  
 if(LINKS.photo&&/^(https:\/\/|data:image\/|[\w./-]+$)/.test(LINKS.photo))document.querySelector('.photo-wrap img').src=LINKS.photo;
 const PHOTO=document.querySelector('.photo-wrap img').src;
-const GALLERY=[PHOTO,"","","","",""];
+   const GALLERY=["img/galerie-1.jpg","img/galerie-2.jpg","img/galerie-3.jpg","img/galerie-4.jpg","img/galerie-5.jpg","img/galerie-6.jpg","img/galerie-7.jpg","img/galerie-8.jpg","img/galerie-9.jpg","img/galerie-10.jpg"];
  
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 let lang='fr';
@@ -564,4 +564,3 @@ setLang(['fr','en','ar'].includes(load('lang'))?load('lang'):'fr');
 </script>
 </body>
 </html>
- 
