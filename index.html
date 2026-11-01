@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eya Sahli – Étudiante en Informatique de Gestion | Portfolio</title>
+<meta name="description" content="Portfolio d'Eya Sahli, étudiante en 3ᵉ année Informatique de Gestion (E-Business) à l'ESSECT. Développement web (PHP/Laravel, Java) et IA. Recherche un stage PFE de 3 mois dès février.">
+<meta name="author" content="Eya Sahli">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Eya Sahli",
+ "jobTitle": "Étudiante en Licence Informatique de Gestion (E-Business)",
+ "description": "Étudiante en 3e année de Licence en Informatique de Gestion (E-Business) à l'ESSECT, spécialisée en développement web (PHP/Laravel, Java) et en intégration d'IA. À la recherche d'un stage PFE de 3 mois à partir de début février.",
+ "affiliation": {
+  "@type": "CollegeOrUniversity",
+  "name": "École Supérieure des Sciences Économiques et Commerciales de Tunis (ESSECT)"
+ },
+ "knowsAbout": [
+  "PHP",
+  "Laravel",
+  "Java",
+  "JavaFX",
+  "Python",
+  "Flask",
+  "MySQL",
+  "API REST",
+  "Intelligence artificielle",
+  "IA générative",
+  "E-Business",
+  "Scrum",
+  "Analyse de contrats",
+  "Personal branding"
+ ],
+ "knowsLanguage": [
+  "ar",
+  "fr",
+  "en",
+  "tr"
+ ],
+ "email": "mailto:eyasahli05@gmail.com",
+ "address": {
+  "@type": "PostalAddress",
+  "addressCountry": "TN"
+ },
+ "sameAs": [
+  "https://www.linkedin.com/in/eya-sahli-15639939b"
+ ]
+}</script>
+<meta name="theme-color" content="#030308">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c084fc'/%3E%3Cstop offset='1' stop-color='%23f472b6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-size='36' font-weight='800' text-anchor='middle' fill='%231a0b2e' font-family='Arial,sans-serif'%3EE%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Eya Sahli – Portfolio">
+<meta property="og:title" content="Eya Sahli – Étudiante en Informatique de Gestion">
+<meta property="og:description" content="Portfolio d'Eya Sahli, étudiante en 3ᵉ année Informatique de Gestion (E-Business) à l'ESSECT. Développement web (PHP/Laravel, Java) et IA. Recherche un stage PFE de 3 mois dès février.">
+<!-- IMPORTANT : après la mise en ligne, remplace og-image.png ci-dessous par l'URL COMPLÈTE de l'image,
+     par ex. https://ton-site.netlify.app/og-image.png (sinon LinkedIn/WhatsApp n'afficheront pas l'image) -->
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eya Sahli – Étudiante en Informatique de Gestion">
+<meta name="twitter:description" content="Portfolio d'Eya Sahli, étudiante en 3ᵉ année Informatique de Gestion (E-Business) à l'ESSECT. Développement web (PHP/Laravel, Java) et IA. Recherche un stage PFE de 3 mois dès février.">
+<meta name="twitter:image" content="og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#c084fc; --secondary:#f472b6;
+  --grad:linear-gradient(135deg,var(--primary),var(--secondary));
+  --bg:#030308; --text:#ececf4; --muted:#a3a3b8;
+  --card:rgba(255,255,255,.05); --card-border:rgba(192,132,252,.22);
+  --shadow:0 18px 50px rgba(192,132,252,.12);
+  --header:rgba(3,3,8,.65);
+  --r:24px;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
+}
+[data-theme="light"]{
+  --bg:#f8fafc; --text:#1f2430; --muted:#5b6275;
+  --card:rgba(255,255,255,.85); --card-border:rgba(192,132,252,.35);
+  --shadow:0 18px 40px rgba(120,80,170,.14);
+  --header:rgba(248,250,252,.75);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65;transition:background .4s,color .4s;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+header,main,footer{position:relative;z-index:1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:8px}
+
+/* Header */
+header{position:fixed;top:0;inset-inline:0;z-index:50;background:var(--header);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border)}
+.bar{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;gap:18px}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-inline-end:auto}
+nav{display:flex;gap:4px}
+nav a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--muted);padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
+nav a:hover{color:var(--text);background:var(--card)}
+.tools{display:flex;gap:8px;align-items:center}
+.lang{display:flex;background:var(--card);border:1px solid var(--card-border);border-radius:999px;padding:3px}
+.lang button{font:600 .78rem var(--font);color:var(--muted);background:none;border:0;padding:6px 11px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--grad);color:#1a0b2e}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--card-border);background:var(--card);color:var(--text);cursor:pointer;display:grid;place-items:center;transition:transform .2s}
+.icon-btn:hover{transform:rotate(18deg)}
+.icon-btn svg{width:18px;height:18px}
+[data-theme="dark"] .sun{display:block}[data-theme="dark"] .moon{display:none}
+[data-theme="light"] .sun{display:none}[data-theme="light"] .moon{display:block}
+.menu-btn{display:none}
+
+/* Layout */
+section{max-width:1120px;margin:auto;padding:96px 20px 24px}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:32px}
+.glass{background:var(--card);border:1px solid var(--card-border);border-radius:var(--r);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{padding:26px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--primary)}
+.card h3{font-size:1.1rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--card-border);background:rgba(192,132,252,.1)}
+
+/* Hero */
+.hero{min-height:100vh;display:grid;align-items:center;gap:48px;grid-template-columns:1.2fr .8fr;padding-top:120px}
+.hero .hello{color:var(--primary);font-weight:600;margin-bottom:10px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.05;font-weight:800;letter-spacing:-.03em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px;padding-bottom:6px}
+.hero p.lead{font-size:1.1rem;color:var(--muted);max-width:52ch;margin-bottom:30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:700 .95rem var(--font);padding:14px 26px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .2s,box-shadow .2s}
+.btn.primary{background:var(--grad);color:#1a0b2e;box-shadow:0 10px 30px rgba(244,114,182,.3)}
+.btn.ghost{background:var(--card);border:1px solid var(--card-border);color:var(--text)}
+.btn:hover{transform:translateY(-2px)}
+.photo-wrap{justify-self:center;position:relative;width:min(340px,80vw);aspect-ratio:1}
+.photo-wrap::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(from 0deg,var(--primary),var(--secondary),var(--primary));animation:spin 8s linear infinite}
+.photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--bg);transition:border-color .4s}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.badge{display:inline-block;margin:-10px 0 28px;padding:9px 18px;border-radius:999px;border:1px solid var(--card-border);background:rgba(192,132,252,.12);font-weight:600;font-size:.9rem}
+.date{color:var(--primary)!important;font-weight:700;font-size:.85rem!important;margin-bottom:6px}
+.role{font-weight:600;color:var(--text)!important;margin-bottom:6px}
+[hidden]{display:none!important}
+.pshot-wrap:empty,.plinks:empty{display:none}
+.pshot{display:block;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--card-border);margin-bottom:16px;padding:0;background:var(--card);cursor:zoom-in}
+.pshot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
+.pshot:hover img{transform:scale(1.04)}
+.plinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.plink{font-weight:700;font-size:.85rem;text-decoration:none;padding:8px 16px;border-radius:999px;border:1px solid var(--card-border);background:rgba(192,132,252,.12);transition:background .2s,transform .2s}
+.plink:hover{background:var(--grad);color:#1a0b2e;transform:translateY(-2px)}
+button.plink{font-family:inherit;color:inherit;cursor:pointer}
+#vb{position:fixed;inset:0;z-index:110;background:rgba(3,3,8,.94);display:none;place-items:center;padding:20px}
+#vb.open{display:grid}
+#vb video{width:min(94vw,1100px);max-height:82vh;border-radius:18px;background:#000}
+#vb p{position:absolute;bottom:22px;inset-inline:20px;text-align:center;color:#fff;font-weight:600;font-size:.95rem}
+#vb button{position:absolute;top:18px;inset-inline-end:18px;font-size:1.6rem;color:#fff;background:rgba(255,255,255,.12);border:0;width:44px;height:44px;border-radius:50%;cursor:pointer}
+/* Certifs */
+.certs{list-style:none;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.certs li{padding:20px 22px;display:flex;gap:14px;align-items:center;font-weight:600}
+.certs .dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--grad)}
+
+/* Gallery */
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.shot{aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;border:1px solid var(--card-border);background:var(--card);cursor:zoom-in;padding:0;position:relative;display:grid;place-items:center;color:var(--muted);font:600 .85rem var(--font)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.shot:hover img{transform:scale(1.05)}
+.shot.empty{background:linear-gradient(135deg,rgba(192,132,252,.18),rgba(244,114,182,.18));cursor:default}
+#lb{position:fixed;inset:0;z-index:100;background:rgba(3,3,8,.92);display:none;place-items:center;padding:20px}
+#lb.open{display:grid}
+#lb img{max-width:min(92vw,900px);max-height:86vh;border-radius:20px}
+#lb button{position:absolute;top:18px;inset-inline-end:18px;font-size:1.6rem;color:#fff;background:rgba(255,255,255,.12);border:0;width:44px;height:44px;border-radius:50%;cursor:pointer}
+
+/* Contact */
+form{padding:30px;display:grid;gap:16px;max-width:640px}
+label{display:grid;gap:6px;font-weight:600;font-size:.9rem}
+input,textarea{font:inherit;color:var(--text);background:rgba(127,127,160,.1);border:1px solid var(--card-border);border-radius:16px;padding:13px 16px;width:100%}
+textarea{min-height:130px;resize:vertical}
+.info{color:var(--muted);margin-bottom:20px;display:grid;gap:4px}
+.info a{color:var(--primary);text-decoration:none;font-weight:600}
+footer{text-align:center;color:var(--muted);font-size:.88rem;padding:64px 20px 36px}
+
+.hero{overflow-x:clip}
+html{overflow-x:clip}
+[dir="rtl"] .hero p.lead{margin-inline:0}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:110px;min-height:auto;padding-bottom:40px}
+  .hero p.lead{margin-inline:auto}.btns{justify-content:center}
+  .photo-wrap{order:-1}
+  nav{position:absolute;top:100%;inset-inline:0;background:var(--header);backdrop-filter:blur(16px);flex-direction:column;padding:10px 20px 16px;display:none;border-bottom:1px solid var(--card-border)}
+  nav.open{display:flex}
+  .menu-btn{display:grid}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+.fstatus{min-height:1.4em;font-weight:600;font-size:.9rem}
+.fstatus.ok{color:#22c55e}.fstatus.err{color:#f87171}
+.cta-fixed{display:none}
+@media (max-width:860px){
+  .cta-fixed{display:block;position:fixed;inset-inline:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;text-align:center;padding:15px 20px;border-radius:999px;background:var(--grad);color:#1a0b2e;font-weight:800;text-decoration:none;box-shadow:0 12px 30px rgba(244,114,182,.4);transition:transform .35s,opacity .35s}
+  .cta-fixed.away{transform:translateY(160%);opacity:0;pointer-events:none}
+  footer{padding-bottom:100px}
+}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#home">Eya Sahli</a>
+    <nav id="nav" aria-label="Navigation">
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#projects" data-i18n="nav_projects">Projets</a>
+      <a href="#education" data-i18n="nav_edu">Formation</a>
+      <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue">
+        <button data-lang="fr" aria-pressed="true">FR</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+        <button data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+      <button class="icon-btn" id="theme" aria-label="Thème clair / sombre">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div>
+      <p class="hello" data-i18n="hello">Bonjour, je suis</p>
+      <h1>Eya Sahli</h1>
+      <p class="lead" data-i18n="lead">Étudiante en 3ᵉ année de Licence en Informatique de Gestion (E-Business) à l'ESSECT, spécialisée en développement web (PHP/Laravel, Java) et en intégration d'IA.</p>
+      <p class="badge" data-i18n="badge">Recherche un stage PFE de 3 mois à partir de début février</p>
+      <div class="btns">
+        <button class="btn primary" id="cv" data-i18n="cv">Télécharger mon CV (PDF)</button>
+        <a class="btn ghost" href="#contact" data-i18n="nav_contact">Contact</a>
+        <a class="btn ghost" id="li" target="_blank" rel="noopener noreferrer" hidden>LinkedIn</a>
+        <a class="btn ghost" id="gh" target="_blank" rel="noopener noreferrer" hidden>GitHub</a>
+      </div>
+    </div>
+    <!-- MARQUEUR 1 : remplace __PHOTO_B64__ par le texte base64 de ta photo (ce qui suit "base64," dans ton ancien fichier) -->
+    <div class="photo-wrap"><img src="data:image/webp;base64,__PHOTO_B64__" alt="Portrait d'Eya Sahli, étudiante en informatique de gestion" width="340" height="340"></div>
+  </section>
+
+  <section id="skills">
+    <h2 data-i18n="skills_t">Compétences</h2><p class="sub" data-i18n="skills_s">Développement web, bases de données, IA et gestion de projet.</p>
+    <div class="grid">
+      <article class="glass card"><h3 data-i18n="sk1_t">Développement</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">Java / JavaFX</span><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">API REST</span></div></article>
+      <article class="glass card"><h3 data-i18n="sk2_t">Bases de données</h3><div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">PDO</span></div></article>
+      <article class="glass card"><h3 data-i18n="sk3_t">Intelligence artificielle</h3><div class="tags"><span class="tag" data-i18n="t_genai">IA générative</span><span class="tag">Chatbots</span><span class="tag">PyTorch</span><span class="tag">LLaMA</span><span class="tag">API Gemini</span></div></article>
+      <article class="glass card"><h3 data-i18n="sk4_t">Outils &amp; gestion de projet</h3><div class="tags"><span class="tag">Git / GitHub</span><span class="tag">Word</span><span class="tag">Excel</span><span class="tag">PowerPoint</span><span class="tag">Agile</span><span class="tag">Scrum</span></div></article>
+      <article class="glass card"><h3 data-i18n="sk5_t">Business &amp; E-Business</h3><div class="tags"><span class="tag" data-i18n="t_deci">Modélisation décisionnelle</span><span class="tag">E-CRM</span><span class="tag" data-i18n="t_mkt">Marketing digital</span><span class="tag">Business Model Canvas</span></div></article>
+      <article class="glass card"><h3 data-i18n="sk6_t">Soft skills</h3><div class="tags"><span class="tag" data-i18n="t_team">Travail d'équipe</span><span class="tag" data-i18n="t_auto">Autonomie</span><span class="tag" data-i18n="t_time">Gestion du temps</span></div></article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 data-i18n="proj_t">Projets</h2><p class="sub" data-i18n="proj_s">Quatre projets académiques et deux projets en conception, du site marchand à la plateforme SaaS.</p>
+    <div class="grid">
+      <article class="glass card"><div class="pshot-wrap" data-p="0"></div><h3 data-i18n="p1_t">Plateforme E-Commerce</h3><p data-i18n="p1_d">Conception complète d'un site marchand selon le motif MVC : parcours utilisateur, panier, catalogue et suivi des commandes.</p><div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Eloquent</span><span class="tag">Blade</span></div><div class="plinks" data-p="0"></div></article>
+      <article class="glass card"><div class="pshot-wrap" data-p="1"></div><h3 data-i18n="p2_t">ChallengeHub – plateforme collaborative</h3><p data-i18n="p2_d">Application web de gestion de défis créatifs en PHP orienté objet, avec authentification sécurisée, votes et interactions.</p><div class="tags"><span class="tag">PHP POO</span><span class="tag">PDO</span><span class="tag">MySQL</span></div><div class="plinks" data-p="1"></div></article>
+      <article class="glass card"><div class="pshot-wrap" data-p="2"></div><h3 data-i18n="p3_t">NexStep – assistant emploi IA</h3><p data-i18n="p3_d">Application desktop qui guide la préparation professionnelle grâce à l'IA générative Google Gemini.</p><div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">MySQL</span><span class="tag">API Gemini</span></div><div class="plinks" data-p="2"></div></article>
+      <article class="glass card"><div class="pshot-wrap" data-p="3"></div><h3 data-i18n="p4_t">Medical Chatbot</h3><p data-i18n="p4_d">Assistant médical intelligent avec reconnaissance et synthèse vocales, et création automatique de documents PDF.</p><div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">PyTorch</span><span class="tag">LLaMA</span></div><div class="plinks" data-p="3"></div></article>
+      <article class="glass card"><div class="pshot-wrap" data-p="4"></div><h3 data-i18n="p5_t">ClausePilot – contrôle contractuel &amp; financier</h3><p data-i18n="p5_d">Plateforme SaaS qui transforme contrats, factures et preuves d'exécution en un système automatisé de détection et de récupération des pertes financières cachées : pénalités non réclamées, remises non appliquées, échéances dépassées. Elle calcule les montants récupérables et prépare les dossiers justificatifs.</p><div class="tags"><span class="tag" data-i18n="t_concept">Projet en conception</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag" data-i18n="t_genai">IA générative</span></div><div class="plinks" data-p="4"></div></article>
+      <article class="glass card"><div class="pshot-wrap" data-p="5"></div><h3 data-i18n="p6_t">BrandPulse AI – personal branding intelligent</h3><p data-i18n="p6_d">Plateforme web qui aide les étudiants et jeunes professionnels à construire une réputation crédible sur LinkedIn. Elle analyse le profil, le CV et les projets, identifie points forts et lacunes, propose un plan d'amélioration personnalisé, suit les progrès, évalue les preuves de compétences et recommande régulièrement les actions prioritaires.</p><div class="tags"><span class="tag" data-i18n="t_concept">Projet en conception</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Python</span><span class="tag" data-i18n="t_genai">IA générative</span></div><div class="plinks" data-p="5"></div></article>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 data-i18n="edu_t">Formation &amp; parcours</h2><p class="sub" data-i18n="edu_s">Études, langues et engagement associatif.</p>
+    <div class="grid">
+      <article class="glass card"><p class="date" data-i18n="e1_date">2024 – 2027 (en cours)</p><h3 data-i18n="e1_t">Licence en Informatique de Gestion – E-Business</h3><p data-i18n="e1_d">École Supérieure des Sciences Économiques et Commerciales de Tunis (ESSECT).</p></article>
+      <article class="glass card"><p class="date" data-i18n="e2_date">2024</p><h3 data-i18n="e2_t">Baccalauréat – Sciences expérimentales</h3><p data-i18n="e2_d">Lycée Béchir Nabhani.</p></article>
+      <article class="glass card"><h3 data-i18n="lang_t">Langues</h3>
+        <div class="tags"><span class="tag" data-i18n="l1">Arabe : langue maternelle</span><span class="tag" data-i18n="l2">Français : B2</span><span class="tag" data-i18n="l3">Anglais : B1</span><span class="tag" data-i18n="l4">Turc : B2</span></div></article>
+      <article class="glass card"><h3 data-i18n="a_t">Vie associative</h3><p class="role" data-i18n="a_role">Membre actif, équipe logistique – IEEE ENSIT Student Branch</p><p data-i18n="a_d">Planification logistique, gestion des ressources et soutien opérationnel lors des événements de l'association.</p></article>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 data-i18n="gal_t">Galerie</h2><p class="sub" data-i18n="gal_s">Quelques images. Cliquez pour agrandir.</p>
+    <div class="gallery" id="gal"></div>
+  </section>
+
+  <section id="contact">
+    <h2 data-i18n="contact_t">Me contacter</h2>
+    <p class="sub" data-i18n="contact_s">Je recherche un stage PFE de 3 mois à partir de début février, pour contribuer à des projets IT en tant que développeuse full stack / analyste.</p>
+    <div class="info">
+      <span><a href="mailto:eyasahli05@gmail.com">eyasahli05@gmail.com</a></span>
+      <span><a href="tel:+21629201074" dir="ltr">+216 29 201 074</a></span>
+      <span><a id="li2" target="_blank" rel="noopener noreferrer" hidden>LinkedIn</a></span>
+      <span><a id="gh2" target="_blank" rel="noopener noreferrer" hidden>GitHub</a></span>
+    </div>
+    <form class="glass" id="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off"></label><label>Ne pas remplir : <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+      <label><span data-i18n="f_name">Nom</span><input name="name" required autocomplete="name"></label>
+      <label><span data-i18n="f_email">Email</span><input name="email" type="email" required autocomplete="email"></label>
+      <label><span data-i18n="f_msg">Message</span><textarea name="msg" required></textarea></label>
+      <button class="btn primary" type="submit" data-i18n="f_send">Envoyer le message</button>
+      <p class="fstatus" id="fstatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<a class="cta-fixed away" id="cta" href="#contact" data-i18n="cta_fixed">Stage PFE : me contacter</a>
+
+<footer>© 2026 Eya Sahli – ESSECT</footer>
+
+<div id="vb" role="dialog" aria-modal="true" aria-label="Vidéo"><button aria-label="Fermer">×</button><video controls playsinline preload="none"></video><p id="verr" hidden></p></div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button aria-label="Fermer">×</button><img alt=""></div>
+
+<script>
+/* ---------- Traductions ---------- */
+const I18N={
+fr:{nav_skills:"Compétences",nav_projects:"Projets",nav_edu:"Formation",nav_gallery:"Galerie",nav_contact:"Contact",
+hello:"Bonjour, je suis",
+lead:"Étudiante en 3ᵉ année de Licence en Informatique de Gestion (E-Business) à l'ESSECT, spécialisée en développement web (PHP/Laravel, Java) et en intégration d'IA.",
+badge:"Recherche un stage PFE de 3 mois à partir de début février",
+cv:"Télécharger mon CV (PDF)",
+skills_t:"Compétences",skills_s:"Développement web, bases de données, IA et gestion de projet.",
+sk1_t:"Développement",sk2_t:"Bases de données",sk3_t:"Intelligence artificielle",sk4_t:"Outils & gestion de projet",sk5_t:"Business & E-Business",sk6_t:"Soft skills",
+t_genai:"IA générative",t_deci:"Modélisation décisionnelle",t_mkt:"Marketing digital",t_team:"Travail d'équipe",t_auto:"Autonomie",t_time:"Gestion du temps",t_concept:"Projet en conception",
+proj_t:"Projets",proj_s:"Quatre projets académiques et deux projets en conception, du site marchand à la plateforme SaaS.",
+p1_t:"Plateforme E-Commerce",p1_d:"Conception complète d'un site marchand selon le motif MVC : parcours utilisateur, panier, catalogue et suivi des commandes.",
+p2_t:"ChallengeHub – plateforme collaborative",p2_d:"Application web de gestion de défis créatifs en PHP orienté objet, avec authentification sécurisée, votes et interactions.",
+p3_t:"NexStep – assistant emploi IA",p3_d:"Application desktop qui guide la préparation professionnelle grâce à l'IA générative Google Gemini.",
+p4_t:"Medical Chatbot",p4_d:"Assistant médical intelligent avec reconnaissance et synthèse vocales, et création automatique de documents PDF.",
+p5_t:"ClausePilot – contrôle contractuel & financier",p5_d:"Plateforme SaaS qui transforme contrats, factures et preuves d'exécution en un système automatisé de détection et de récupération des pertes financières cachées : pénalités non réclamées, remises non appliquées, échéances dépassées. Elle calcule les montants récupérables et prépare les dossiers justificatifs.",
+p6_t:"BrandPulse AI – personal branding intelligent",p6_d:"Plateforme web qui aide les étudiants et jeunes professionnels à construire une réputation crédible sur LinkedIn. Elle analyse le profil, le CV et les projets, identifie points forts et lacunes, propose un plan d'amélioration personnalisé, suit les progrès, évalue les preuves de compétences et recommande régulièrement les actions prioritaires.",
+edu_t:"Formation & parcours",edu_s:"Études, langues et engagement associatif.",
+e1_date:"2024 – 2027 (en cours)",e1_t:"Licence en Informatique de Gestion – E-Business",e1_d:"École Supérieure des Sciences Économiques et Commerciales de Tunis (ESSECT).",
+e2_date:"2024",e2_t:"Baccalauréat – Sciences expérimentales",e2_d:"Lycée Béchir Nabhani.",
+lang_t:"Langues",l1:"Arabe : langue maternelle",l2:"Français : B2",l3:"Anglais : B1",l4:"Turc : B2",
+a_t:"Vie associative",a_role:"Membre actif, équipe logistique – IEEE ENSIT Student Branch",a_d:"Planification logistique, gestion des ressources et soutien opérationnel lors des événements de l'association.",
+l_code:"Code source",l_video:"Voir la démo vidéo",v_err:"La vidéo n'a pas pu être chargée",l_demo:"Démo en ligne",l_shot:"Capture d'écran de",
+gal_t:"Galerie",gal_s:"Quelques images. Cliquez pour agrandir.",gal_empty:"Ta photo ici",
+contact_t:"Me contacter",contact_s:"Je recherche un stage PFE de 3 mois à partir de début février, pour contribuer à des projets IT en tant que développeuse full stack / analyste.",f_name:"Nom",f_email:"Email",f_msg:"Message",f_send:"Envoyer le message",f_sending:"Envoi en cours…",f_ok:"Merci ! Votre message a bien été envoyé.",f_err:"L'envoi a échoué. Écrivez-moi directement à eyasahli05@gmail.com.",cta_fixed:"Stage PFE : me contacter",
+},
+en:{nav_skills:"Skills",nav_projects:"Projects",nav_edu:"Education",nav_gallery:"Gallery",nav_contact:"Contact",
+hello:"Hi, I'm",
+lead:"3rd-year Business Computing (E-Business) undergraduate at ESSECT, specialising in web development (PHP/Laravel, Java) and AI integration.",
+badge:"Looking for a 3-month final-year internship starting early February",
+cv:"Download my CV (PDF)",
+skills_t:"Skills",skills_s:"Web development, databases, AI and project management.",
+sk1_t:"Development",sk2_t:"Databases",sk3_t:"Artificial intelligence",sk4_t:"Tools & project management",sk5_t:"Business & E-Business",sk6_t:"Soft skills",
+t_genai:"Generative AI",t_deci:"Decision-support modelling",t_mkt:"Digital marketing",t_team:"Teamwork",t_auto:"Autonomy",t_time:"Time management",t_concept:"Project in design",
+proj_t:"Projects",proj_s:"Four academic projects and two projects in design, from an online shop to a SaaS platform.",
+p1_t:"E-Commerce platform",p1_d:"Full design of an online shop using the MVC pattern: user journey, cart, catalogue and order tracking.",
+p2_t:"ChallengeHub – collaborative platform",p2_d:"Web app for managing creative challenges in object-oriented PHP, with secure authentication, voting and interactions.",
+p3_t:"NexStep – AI job assistant",p3_d:"Desktop application that guides career preparation using Google Gemini generative AI.",
+p4_t:"Medical Chatbot",p4_d:"Intelligent medical assistant with speech recognition and synthesis, and automatic PDF document creation.",
+p5_t:"ClausePilot – contract & financial control",p5_d:"SaaS platform that turns contracts, invoices and proof of performance into an automated system for detecting and recovering hidden financial losses: unclaimed penalties, unapplied discounts, missed deadlines. It calculates recoverable amounts and prepares supporting files.",
+p6_t:"BrandPulse AI – smart personal branding",p6_d:"Web platform that helps students and young professionals build a credible reputation on LinkedIn. It analyses the profile, CV and projects, identifies strengths and gaps, proposes a personalised improvement plan, tracks progress, evaluates proof of skills and regularly recommends priority actions.",
+edu_t:"Education & background",edu_s:"Studies, languages and student involvement.",
+e1_date:"2024 – 2027 (in progress)",e1_t:"Bachelor's in Business Computing – E-Business",e1_d:"École Supérieure des Sciences Économiques et Commerciales de Tunis (ESSECT).",
+e2_date:"2024",e2_t:"Baccalaureate – Experimental Sciences",e2_d:"Lycée Béchir Nabhani.",
+lang_t:"Languages",l1:"Arabic: native",l2:"French: B2",l3:"English: B1",l4:"Turkish: B2",
+a_t:"Student involvement",a_role:"Active member, logistics team – IEEE ENSIT Student Branch",a_d:"Logistics planning, resource management and operational support during the association's events.",
+l_code:"Source code",l_video:"Watch the video demo",v_err:"The video could not be loaded",l_demo:"Live demo",l_shot:"Screenshot of",
+gal_t:"Gallery",gal_s:"A few pictures. Click to enlarge.",gal_empty:"Your photo here",
+contact_t:"Get in touch",contact_s:"I'm looking for a 3-month final-year internship starting early February, to contribute to IT projects as a full-stack developer / analyst.",f_name:"Name",f_email:"Email",f_msg:"Message",f_send:"Send message",f_sending:"Sending…",f_ok:"Thank you! Your message has been sent.",f_err:"Sending failed. Please email me directly at eyasahli05@gmail.com.",cta_fixed:"Internship? Contact me",
+},
+ar:{nav_skills:"المهارات",nav_projects:"المشاريع",nav_edu:"التكوين",nav_gallery:"المعرض",nav_contact:"اتصال",
+hello:"مرحبًا، أنا",
+lead:"طالبة في السنة الثالثة إجازة في إعلامية التصرف (E-Business) بالمدرسة العليا للعلوم الاقتصادية والتجارية بتونس، متخصصة في تطوير الويب (PHP/Laravel وJava) ودمج الذكاء الاصطناعي.",
+badge:"أبحث عن تربص نهاية الدراسات (PFE) لمدة 3 أشهر ابتداءً من بداية فيفري",
+cv:"تحميل سيرتي الذاتية (PDF)",
+skills_t:"المهارات",skills_s:"تطوير الويب وقواعد البيانات والذكاء الاصطناعي وإدارة المشاريع.",
+sk1_t:"التطوير",sk2_t:"قواعد البيانات",sk3_t:"الذكاء الاصطناعي",sk4_t:"الأدوات وإدارة المشاريع",sk5_t:"الأعمال والتجارة الإلكترونية",sk6_t:"المهارات الشخصية",
+t_genai:"الذكاء الاصطناعي التوليدي",t_deci:"النمذجة الداعمة للقرار",t_mkt:"التسويق الرقمي",t_team:"العمل الجماعي",t_auto:"الاستقلالية",t_time:"إدارة الوقت",t_concept:"مشروع قيد التصميم",
+proj_t:"المشاريع",proj_s:"أربعة مشاريع أكاديمية ومشروعان قيد التصميم، من موقع تجاري إلى منصة SaaS.",
+p1_t:"منصة تجارة إلكترونية",p1_d:"تصميم كامل لموقع تجاري وفق نمط MVC: مسار المستخدم والسلة والكتالوج وتتبع الطلبات.",
+p2_t:"ChallengeHub – منصة تعاونية",p2_d:"تطبيق ويب لإدارة التحديات الإبداعية بـ PHP كائنية التوجه، مع مصادقة آمنة وتصويت وتفاعلات.",
+p3_t:"NexStep – مساعد توظيف بالذكاء الاصطناعي",p3_d:"تطبيق سطح مكتب يرافق التحضير المهني بفضل الذكاء الاصطناعي التوليدي Google Gemini.",
+p4_t:"Medical Chatbot",p4_d:"مساعد طبي ذكي مع التعرّف على الصوت وتركيبه وإنشاء تلقائي لوثائق PDF.",
+p5_t:"ClausePilot – الرقابة التعاقدية والمالية",p5_d:"منصة SaaS تحوّل العقود والفواتير وإثباتات التنفيذ إلى نظام آلي لاكتشاف الخسائر المالية الخفية واسترجاعها: غرامات غير مطالَب بها، تخفيضات غير مطبَّقة، آجال متجاوَزة. تحتسب المبالغ القابلة للاسترداد وتُعدّ ملفات الإثبات.",
+p6_t:"BrandPulse AI – العلامة الشخصية الذكية",p6_d:"منصة ويب تساعد الطلبة والشباب المهنيين على بناء سمعة موثوقة على LinkedIn. تحلّل الملف المهني والسيرة الذاتية والمشاريع، وتحدّد نقاط القوة والثغرات، وتقترح خطة تحسين مخصّصة، وتتابع التقدّم، وتقيّم إثباتات المهارات، وتوصي دوريًا بالإجراءات ذات الأولوية.",
+edu_t:"التكوين والمسار",edu_s:"الدراسة واللغات والنشاط الجمعياتي.",
+e1_date:"2024 – 2027 (جارية)",e1_t:"إجازة في إعلامية التصرف – E-Business",e1_d:"المدرسة العليا للعلوم الاقتصادية والتجارية بتونس (ESSECT).",
+e2_date:"2024",e2_t:"باكالوريا – علوم تجريبية",e2_d:"معهد بشير نبهاني (Lycée Béchir Nabhani).",
+lang_t:"اللغات",l1:"العربية: اللغة الأم",l2:"الفرنسية: B2",l3:"الإنجليزية: B1",l4:"التركية: B2",
+a_t:"الحياة الجمعياتية",a_role:"عضو نشيط، فريق اللوجستيك – IEEE ENSIT Student Branch",a_d:"تخطيط لوجستي وإدارة الموارد ودعم عملياتي خلال تظاهرات الجمعية.",
+l_code:"الكود المصدري",l_video:"مشاهدة العرض بالفيديو",v_err:"تعذّر تحميل الفيديو",l_demo:"عرض مباشر",l_shot:"لقطة شاشة لمشروع",
+gal_t:"المعرض",gal_s:"بعض الصور. انقر للتكبير.",gal_empty:"ضع صورتك هنا",
+contact_t:"تواصل معي",contact_s:"أبحث عن تربص نهاية الدراسات (PFE) لمدة 3 أشهر ابتداءً من بداية فيفري، للمساهمة في مشاريع معلوماتية كمطوّرة Full Stack / محلّلة.",f_name:"الاسم",f_email:"البريد الإلكتروني",f_msg:"الرسالة",f_send:"إرسال الرسالة",f_sending:"جارٍ الإرسال…",f_ok:"شكرًا لك! تم إرسال رسالتك.",f_err:"تعذّر الإرسال. راسلني مباشرة على eyasahli05@gmail.com",cta_fixed:"تربص؟ تواصل معي",
+}
+};
+
+/* ---------- TES LIENS : remplis les "" ci-dessous (https://... uniquement) ----------
+   linkedin / github : ton profil. projects : dans l'ordre E-Commerce, ChallengeHub, NexStep, Medical Chatbot, ClausePilot, BrandPulse AI.
+   img : chemin d'une capture (ex. "img/ecommerce.png") ; code : lien GitHub du projet ; demo : lien d'une démo.
+   form : formulaire de contact. "https://formspree.io/f/xxxxxxxx" (Formspree) ou "netlify" (si hébergé sur Netlify). Vide = ouvre le client mail.
+   video : chemin d'une vidéo de démo (ex. "videos/projet.mp4", fichier à placer à côté de ce HTML).
+   photo : ta nouvelle photo de profil (ex. "img/eya.jpg"). Ce qui reste vide n'est pas affiché. */
+const LINKS={linkedin:"https://www.linkedin.com/in/eya-sahli-15639939b",github:"",photo:"",form:"",projects:[
+  /* MARQUEUR 2 : remplace __IMG_ECOMMERCE_B64__ par le base64 de la capture E-Commerce */
+  {img:"data:image/webp;base64,__IMG_ECOMMERCE_B64__",code:"",demo:"",video:"videos/ecommerce.mp4"},
+  {img:"",code:"",demo:"",video:""},
+  /* MARQUEUR 3 : remplace __IMG_NEXSTEP_B64__ par le base64 de la capture NexStep */
+  {img:"data:image/webp;base64,__IMG_NEXSTEP_B64__",code:"",demo:"",video:"videos/nexstep.mp4"},
+  {img:"",code:"",demo:"",video:""},
+  /* ClausePilot (projet en conception) : remplis code / demo / img / video quand tu auras un prototype */
+  {img:"",code:"",demo:"",video:""},
+  /* BrandPulse AI (projet en conception) : idem */
+  {img:"",code:"",demo:"",video:""}
+]};
+const okVideo=u=>typeof u==='string'&&/^(https:\/\/[^\s]+|[\w./-]+)\.(mp4|webm)(\?[^\s]*)?$/.test(u);
+const okUrl=u=>typeof u==='string'&&/^https:\/\//.test(u);
+function renderLinks(){
+  const d=I18N[lang];
+  [['li',LINKS.linkedin],['li2',LINKS.linkedin],['gh',LINKS.github],['gh2',LINKS.github]].forEach(([id,u])=>{
+    const a=document.getElementById(id);if(!a)return;
+    if(okUrl(u)){a.href=u;a.hidden=false}else{a.removeAttribute('href');a.hidden=true}
+    if(id==='li2'||id==='gh2'){a.parentElement.hidden=a.hidden}
+  });
+  LINKS.projects.forEach((p,i)=>{
+    const shot=document.querySelector('.pshot-wrap[data-p="'+i+'"]'),box=document.querySelector('.plinks[data-p="'+i+'"]');
+    if(!shot||!box)return;
+    shot.innerHTML='';box.innerHTML='';
+    if(p.img&&(/^https:\/\//.test(p.img)||/^data:image\//.test(p.img)||/^[\w./-]+$/.test(p.img))){
+      const b=document.createElement('button');b.type='button';b.className='pshot';
+      const im=document.createElement('img');im.src=p.img;im.loading='lazy';
+      im.alt=d.l_shot+' '+(document.querySelector('[data-i18n="p'+(i+1)+'_t"]').textContent);
+      b.appendChild(im);b.onclick=()=>openLB(p.img);shot.appendChild(b);
+    }
+    if(okVideo(p.video)){
+      const v=document.createElement('button');v.type='button';v.className='plink';v.textContent='\u25B6 '+d.l_video;
+      v.onclick=()=>openVB(p.video,document.querySelector('[data-i18n="p'+(i+1)+'_t"]').textContent);box.appendChild(v);
+    }
+    [[p.code,d.l_code],[p.demo,d.l_demo]].forEach(([u,label])=>{
+      if(!okUrl(u))return;
+      const a=document.createElement('a');a.className='plink';a.href=u;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label;box.appendChild(a);
+    });
+  });
+}
+
+if(LINKS.photo&&/^(https:\/\/|data:image\/|[\w./-]+$)/.test(LINKS.photo))document.querySelector('.photo-wrap img').src=LINKS.photo;
+const PHOTO=document.querySelector('.photo-wrap img').src;
+/* ---------- Galerie : remplace les src par TES photos (chemins ou data URI) ---------- */
+const GALLERY=["img/galerie-1.jpg","img/galerie-2.jpg","img/galerie-3.jpg","img/galerie-4.jpg","img/galerie-5.jpg","img/galerie-6.jpg","img/galerie-7.jpg","img/galerie-8.jpg","img/galerie-9.jpg","img/galerie-10.jpg"];
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let lang='fr';
+function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+
+function buildGallery(){
+  const g=$('#gal');g.innerHTML='';
+  GALLERY.forEach((src,i)=>{
+    const b=document.createElement('button');b.className='shot'+(src?'':' empty');b.type='button';
+    if(src){const im=document.createElement('img');im.src=src;im.alt='Photo '+(i+1);im.loading='lazy';b.appendChild(im);b.onclick=()=>openLB(src)}
+    else{b.textContent=I18N[lang].gal_empty;b.disabled=true}
+    g.appendChild(b);
+  });
+}
+function setLang(l){
+  lang=l;const d=I18N[l];
+  document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
+  $$('[data-i18n]').forEach(el=>{el.textContent=d[el.dataset.i18n]});
+  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));
+  buildGallery();renderLinks();store('lang',l);
+}
+$$('.lang button').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
+
+/* Thème */
+function setTheme(t){document.documentElement.dataset.theme=t;store('theme',t)}
+$('#theme').onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+
+/* Menu mobile */
+$('#menu').onclick=()=>{const o=$('#nav').classList.toggle('open');$('#menu').setAttribute('aria-expanded',o)};
+$$('#nav a').forEach(a=>a.onclick=()=>{$('#nav').classList.remove('open');$('#menu').setAttribute('aria-expanded',false)});
+
+/* CV PDF (intégrés au fichier : FR par défaut, EN si la langue est l'anglais) */
+/* MARQUEURS 4 et 5 : remplace __CV_FR_B64__ et __CV_EN_B64__ par le base64 de tes deux CV */
+const CV_PDF={fr:"__CV_FR_B64__",en:"__CV_EN_B64__"};
+$('#cv').onclick=()=>{
+  const key=lang==='en'?'en':'fr';
+  const bin=atob(CV_PDF[key]),u8=new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++)u8[i]=bin.charCodeAt(i);
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([u8],{type:'application/pdf'}));
+  a.download=key==='en'?'CV_Eya_Sahli_EN.pdf':'CV_Eya_Sahli.pdf';
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+
+/* Contact : Formspree / Netlify Forms si LINKS.form est rempli, sinon repli sur le client mail */
+$('#form').onsubmit=async e=>{
+  e.preventDefault();
+  const form=e.target,f=new FormData(form),st=$('#fstatus'),btn=form.querySelector('button[type=submit]'),d=I18N[lang];
+  if(f.get('bot-field')||f.get('_gotcha'))return;            // anti-spam : champs pièges remplis par les robots
+  const mode=LINKS.form||'';
+  const formspree=/^https:\/\/formspree\.io\/f\/\w+$/.test(mode);
+  if(mode==='netlify'||formspree){
+    btn.disabled=true;st.className='fstatus';st.textContent=d.f_sending;
+    try{
+      let r;
+      if(formspree){f.append('_subject','Portfolio – '+f.get('name'));r=await fetch(mode,{method:'POST',headers:{'Accept':'application/json'},body:f})}
+      else{r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(f).toString()})}
+      if(!r.ok)throw new Error(r.status);
+      form.reset();st.className='fstatus ok';st.textContent=d.f_ok;
+    }catch(err){st.className='fstatus err';st.textContent=d.f_err}
+    btn.disabled=false;return;
+  }
+  const body=f.get('msg')+'\n\n— '+f.get('name')+' ('+f.get('email')+')';
+  location.href='mailto:eyasahli05@gmail.com?subject='+encodeURIComponent('Portfolio – '+f.get('name'))+'&body='+encodeURIComponent(body);
+};
+
+/* Lightbox */
+const lb=$('#lb');
+function openLB(src){lb.querySelector('img').src=src;lb.classList.add('open');lb.querySelector('button').focus()}
+function closeLB(){lb.classList.remove('open')}
+lb.onclick=e=>{if(e.target!==lb.querySelector('img'))closeLB()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+
+/* Lecteur vidéo (pas de lecture automatique) */
+const vb=$('#vb'),vv=vb.querySelector('video');
+const verr=$('#verr');
+vv.addEventListener('error',()=>{const s=vv.getAttribute('src');if(s){verr.textContent=I18N[lang].v_err+' ('+s+')';verr.hidden=false}});
+function openVB(src,title){verr.hidden=true;vv.src=src;vv.setAttribute('aria-label',title);vb.classList.add('open');vb.querySelector('button').focus()}
+function closeVB(){vv.pause();vv.removeAttribute('src');vv.load();vb.classList.remove('open')}
+vb.onclick=e=>{if(e.target!==vv)closeVB()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&vb.classList.contains('open'))closeVB()});
+
+/* ---------- Particules interactives ---------- */
+(function(){
+  const c=$('#bg'),x=c.getContext('2d');let W,H,P=[],m={x:-999,y:-999};
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function size(){const r=devicePixelRatio||1;W=innerWidth;H=innerHeight;c.width=W*r;c.height=H*r;x.setTransform(r,0,0,r,0,0);
+    const n=Math.min(110,Math.floor(W*H/14000));P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.8+.8,h:Math.random()}))}
+  addEventListener('resize',size);
+  addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY});
+  addEventListener('pointerleave',()=>{m.x=m.y=-999});
+  function frame(){
+    x.clearRect(0,0,W,H);
+    const light=document.documentElement.dataset.theme==='light',a=light?.55:.8;
+    for(const p of P){
+      const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);
+      if(d<140&&d>0){const f=(140-d)/140;p.vx+=dx/d*f*.25;p.vy+=dy/d*f*.25}
+      p.vx*=.985;p.vy*=.985;
+      if(Math.abs(p.vx)<.08)p.vx+=(Math.random()-.5)*.02;
+      if(Math.abs(p.vy)<.08)p.vy+=(Math.random()-.5)*.02;
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+    }
+    for(let i=0;i<P.length;i++){
+      const p=P[i];
+      for(let j=i+1;j<P.length;j++){
+        const q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);
+        if(d<120){x.strokeStyle=`rgba(192,132,252,${(1-d/120)*.28*a})`;x.lineWidth=1;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}
+      }
+      x.fillStyle=p.h>.5?`rgba(244,114,182,${a})`:`rgba(192,132,252,${a})`;
+      x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill();
+    }
+    if(!reduce)requestAnimationFrame(frame);
+  }
+  size();frame();
+})();
+
+/* Bouton fixe : caché en haut de page (le héro a déjà son bouton) et dans la section contact */
+(function(){
+  const cta=$('#cta');if(!cta||!('IntersectionObserver' in window))return;
+  const seen={home:true,contact:false};
+  const upd=()=>cta.classList.toggle('away',seen.home||seen.contact);
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{seen[en.target.id]=en.target.id==='home'?en.intersectionRatio>=.35:en.isIntersecting});upd()},{threshold:[0,.35]});
+  io.observe($('#home'));io.observe($('#contact'));upd();
+})();
+
+/* Init */
+setTheme(load('theme')==='light'?'light':'dark');
+setLang(['fr','en','ar'].includes(load('lang'))?load('lang'):'fr');
+</script>
+</body>
+</html>
